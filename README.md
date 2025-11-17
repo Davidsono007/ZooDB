@@ -1,7 +1,7 @@
 # ZooDB
 Um Banco de Dados de um zoológico fictício.
 ## Funcionalidades
-- Conexão com Banco de Dados MySQL através de JDBC
+- Conexão com Banco de Dados MySQL através de JDBC (Mais especificamente MySQLConnector/j)
 - CRUD de três tabelas: Animal, Cercado e Especie
 - Um menu e botões dedicados permitindo acesso fluido entre as três
 - Um guia explicando o que cada atributo de cada tabela representa
