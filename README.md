@@ -1,4 +1,4 @@
 # ZooDB
-Por: Davi de Almeida Cejudo e Maria Eduarda Amador Mota
 
-Um projeto que usa JFrame, JDBC e MySQL. Feito na IDE Apache NetBeans e como uma prova da faculdade.
+
+Desenvolvido como um projeto da faculdade da disciplina Lingagem de Programação II, por Davi de Almeida Cejudo e Maria Eduarda Amador Mota
