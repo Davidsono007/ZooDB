@@ -1,0 +1,58 @@
+# Você vai precisar criar um Banco de Dados Local que possua essas exatas tabelas
+# Não esqueça de inicilizar o uma conexão com MySQL pelo painel de controle do Xampp
+
+CREATE database ZooV2;
+USE ZooV2;
+
+CREATE TABLE  Especie (
+	id_especie int auto_increment not null,
+    nm_especie varchar(100) not null,
+    ds_dieta varchar(50) not null,
+    primary key (id_especie)
+);
+
+CREATE TABLE Cercado (
+	id_cercado int auto_increment not null,
+    nm_cercado varchar(100) not null,
+    ds_tipo varchar(50) not null,
+    primary key (id_cercado)
+);
+
+CREATE TABLE Animal (
+	id_animal int auto_increment not null,
+    nm_animal varchar(100) not null,
+    ds_sexo char(1) not null,
+    id_especie int,
+    id_cercado int,
+    primary key (id_animal),
+    foreign key (id_especie) references Especie(id_especie),
+    foreign key (id_cercado) references Cercado(id_cercado)
+);
+
+# Dados da tabela Especie
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Leao", "Carnivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Uapiti", "Herbivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Capivara", "Herbivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Pinguim Africano", "Pscivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Bicho Preguica", "Herbivoro");
+
+# Dados da tabela Cercado
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("A", "Externo");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("B", "Externo");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("C", "Externo");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("D", "Externo");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("E", "Externo");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("F", "Interno");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("G", "Terrario");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("H", "Lago");
+
+# Dados da tabela Animal
+INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Simba", "M", 1, 1);
+INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("John", "M", 2, 2);
+INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Jorge", "M", 3, 3);
+INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Pena", "F", 4, 6);
+INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Flecha", "F", 5, 5);
+
+select * from Especie;
+select * from Cercado;
+select * from Animal;
