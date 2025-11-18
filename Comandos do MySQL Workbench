@@ -35,6 +35,11 @@ INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Uapiti", "Herbivoro");
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Capivara", "Herbivoro");
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Pinguim Africano", "Pscivoro");
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Bicho Preguica", "Herbivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Elefante Africano", "Herbivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Tartaruga Marinha", "Herbivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Urso Pardo", "Onivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Falcão Peregrino", "Carnivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Golfinho", "Psicivoro");
 
 # Dados da tabela Cercado
 INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("A", "Externo");
@@ -45,6 +50,11 @@ INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("E", "Externo");
 INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("F", "Interno");
 INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("G", "Terrario");
 INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("H", "Lago");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("I", "Externo");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("J", "Interno");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("K", "Terrario");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("L", "Lago");
+INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("M", "Externo");
 
 # Dados da tabela Animal
 INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Simba", "M", 1, 1);
@@ -52,6 +62,11 @@ INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("John", "
 INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Jorge", "M", 3, 3);
 INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Pena", "F", 4, 6);
 INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Flecha", "F", 5, 5);
+INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Dumbo", "M", 6, 9);
+INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Naiara", "F", 7, 12);
+INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Bruno", "M", 8, 13);
+INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Serena", "F", 9, 11);
+INSERT INTO Animal(nm_animal, ds_sexo, id_especie, id_cercado) VALUES ("Léo", "M", 10, 12);
 
 select * from Especie;
 select * from Cercado;
