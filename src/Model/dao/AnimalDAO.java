@@ -205,7 +205,7 @@ public class AnimalDAO {
         List<Animal> animais = new ArrayList<>();
         
         try {
-            stmt = con.prepareStatement("SELECT * FROM Animal WHERE id_especie LIKE ?");
+            stmt = con.prepareStatement("SELECT * FROM Animal WHERE id_especie = ?");
             stmt.setString(1, especie);
             rs = stmt.executeQuery();
             
@@ -232,7 +232,7 @@ public class AnimalDAO {
         
     }
     
-    // Função de SELECT de id_recinto
+    // Função de SELECT de id_cercado
     public List<Animal> searchAnimalCercado(String cercado) throws SQLException{
         
         Connection con = ConnectionFactory.getConnection();
