@@ -33,13 +33,13 @@ CREATE TABLE Animal (
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Leao", "Carnivoro");
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Uapiti", "Herbivoro");
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Capivara", "Herbivoro");
-INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Pinguim Africano", "Pscivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Pinguim Africano", "Piscivoro");
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Bicho Preguica", "Herbivoro");
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Elefante Africano", "Herbivoro");
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Tartaruga Marinha", "Herbivoro");
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Urso Pardo", "Onivoro");
 INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Falcão Peregrino", "Carnivoro");
-INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Golfinho", "Psicivoro");
+INSERT INTO Especie(nm_especie, ds_dieta) VALUES ("Golfinho", "Piscivoro");
 
 # Dados da tabela Cercado
 INSERT INTO Cercado(nm_cercado, ds_tipo) VALUES ("A", "Externo");
